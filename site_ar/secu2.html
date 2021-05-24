@@ -1,0 +1,37 @@
+<html>
+<head>
+	<title>Test HIRO2</title>
+	<!-- include aframe obviously -->
+	<script src="https://aframe.io/releases/0.7.0/aframe.min.js"></script>
+	<!-- include ar.js for a-frame -->
+	<link rel="stylesheet" type="text/css" href="monStyle.css">
+	<link href='https://fonts.googleapis.com/css?family=Oswald:300' rel='stylesheet' type='text/css'>
+	<script src="aframe-ar.js"></script>
+	
+
+</head>
+
+<body style='margin : 0px; overflow: hidden;'>
+	</div>
+		<a-scene embedded arjs>
+			<!--<a-marker-camera preset='custom' type='pattern' url='patternsecu.patt'>				<a-text position='0 0 -0.5' value='Voici le message :' color="#ff3700" scale="0.5" rotation="270 0 0"  ></a-text>
+				<a-text position='-2 0 0' value='Bonjour tout le monde !' color="#d69900" rotation="270 0 0" scale="2 2 2" font="	https://cdn.aframe.io/fonts/Exo2SemiBold.fnt" letterSpacing="0.8"></a-text>
+			</a-marker-camera>
+			-->
+			<a-marker-camera preset='hiro'></a-marker-camera>
+		</a-scene>
+	</div>
+	<div id="monUI">
+		<button id="vr" class="myButton desactivated" onClick="launchVR()">Virtual Reality</button>
+		<button id="security" class="myButton activated" onClick="launchSecu()">Security</button>
+		<button id="compo" class="myButton desactivated" onClick="launchCompo()">Compositing</button>
+		<button id="pix" class="myButton desactivated" onClick="launchPix()">Image Editing</button>
+	</div>
+	
+	<script src="switch.js"></script>
+</body>
+
+
+
+</html>
+

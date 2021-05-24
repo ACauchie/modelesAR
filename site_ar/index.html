@@ -1,0 +1,40 @@
+<html>
+<head>
+	<title>Test HIRO2</title>
+	<link rel="icon" href="logo.png">
+	<!-- include aframe obviously -->
+	<script src="https://aframe.io/releases/0.7.0/aframe.min.js"></script>
+	<!-- include ar.js for a-frame -->
+	<link rel="stylesheet" type="text/css" href="monStyle.css">
+	<link href='https://fonts.googleapis.com/css?family=Oswald:300' rel='stylesheet' type='text/css'>
+	<script src="aframe-ar.js"></script>
+	
+
+</head>
+
+<body style='margin : 0px; overflow: hidden;'>
+	</div>
+		<a-scene embedded arjs>
+			<!-- <a-text value="Voici un modele 3D observable grace a la realite augmentee !" text="color:#2E9AFE; opacity:1	" rotation="0 0 0" position="0 1 1" text-shadow="#000000 1px 1px, #000000 -1px 1px, #000000 -1px -1px, #000000 1px -1px"></a-text> -->
+			<a-assets>
+				<a-asset-item id="myObj" src="scene.gltf"></a-asset-item>
+			</a-assets>
+			<a-gltf-model src="#myObj" scale="0.02 0.02 0.02"></a-gltf-model>
+			<!--<a-marker-camera preset='custom' type='pattern' url='patternvr.patt'></a-marker-camera>-->
+			<a-marker-camera preset='hiro'></a-marker-camera>
+		</a-scene>
+	</div>
+	<div id="monUI">
+		<button id="vr" class="myButton activated" onClick="launchVR()">Virtual Reality</button>
+		<button id="security" class="myButton desactivated" onClick="launchSecu()">Security</button>
+		<button id="compo" class="myButton desactivated" onClick="launchCompo()">Compositing</button>
+		<button id="pix" class="myButton desactivated" onClick="launchPix()">Image Editing</button>
+	</div>
+	
+	<script src="switch.js"></script>
+</body>
+
+
+
+</html>
+

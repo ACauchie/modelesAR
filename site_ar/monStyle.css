@@ -1,0 +1,61 @@
+#monUI{
+
+	position: fixed;
+    bottom: 20px;
+	right: 0px;
+    width: 100%;
+    text-align: center;
+    z-index: 1;
+    color: grey;
+	margin: 0px; 
+	padding: 0px;
+
+}
+
+
+
+.myButton {
+
+	font-family: 'Oswald', sans-serif;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0;
+    border: 1px solid;
+    border-radius: 7px;
+    padding-bottom: 3px;
+    margin: 0px 2px;
+
+}
+
+.desactivated{
+    border-color: #81aaa4;
+    background-color: #222;
+    color: #81aaa4;
+}
+
+.activated{
+    border-color: #222;
+    background-color: #81aaa4;
+    color: #222;
+}
+
+
+#arjsDebugUIContainer{
+
+	display: none !important;
+
+}
+
+.a-enter-vr {
+	display : none;
+}
+
+
+@media screen and (max-width: 640px) {
+  .myButton{
+	float : right; 
+	clear : both; 
+	margin: 2px 10px;
+  }
+}
+
